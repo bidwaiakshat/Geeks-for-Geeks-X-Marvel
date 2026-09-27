@@ -67,7 +67,7 @@ section[id] { scroll-margin-top: 76px; }
 .skip-link:focus { top: 12px; }
 .site-header { height: 76px; position: fixed; inset: 0 0 auto; z-index: 60; display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 0 clamp(20px, 4.3vw, 80px); border-bottom: 1px solid var(--border); background: oklch(0.16 0.012 260 / 88%); backdrop-filter: blur(18px); }
 .brand { display: inline-flex; align-items: center; gap: 13px; color: var(--foreground); text-decoration: none; flex-shrink: 0; }
-.brand-mark { width: 32px; height: 32px; display: grid; place-items: center; border: 2px solid var(--primary); color: var(--primary); font: 900 24px/1 var(--font-display); transform: skew(-7deg); }
+.brand-mark { width: 36px; height: 32px; display: block; object-fit: contain; flex: none; }
 .brand-name { display: flex; flex-direction: column; font: 800 17px/.9 var(--font-display); text-transform: uppercase; letter-spacing: .03em; }
 .brand-name small { color: var(--muted-foreground); font: 700 9px/1.8 var(--font-body); letter-spacing: .12em; }
 .marvel-badge { background: var(--primary); color: var(--primary-foreground); font: 900 21px/.85 var(--font-display); padding: 6px 5px 5px; letter-spacing: -.04em; }
@@ -270,7 +270,7 @@ section[id] { scroll-margin-top: 76px; }
   .pass-stage { padding-top: 0; }
 }
 @media (max-width: 420px) {
-  .brand-mark { display: none; }
+  .brand-mark { width: 30px; height: 27px; }
   .brand-name { font-size: 13px; }
   .brand-name small { font-size: 8px; }
   .header-actions { gap: 6px; }
