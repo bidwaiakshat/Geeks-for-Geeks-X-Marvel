@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ASSEMBLE — The Infinity Protocol" },
-      { name: "description", content: "A Marvel-inspired student event concept by GeeksForGeeks Student Chapter, Bennett University." },
+      { title: "AVENGERS: THE INFINITY PROTOCOL" },
+      { name: "description", content: "AVENGERS: THE INFINITY PROTOCOL — an unofficial student fan event concept organized by GeeksForGeeks Student Chapter, Bennett University." },
       { name: "author", content: "GeeksForGeeks Student Chapter, Bennett University" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
