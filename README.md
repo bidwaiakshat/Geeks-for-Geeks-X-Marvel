@@ -22,7 +22,8 @@ Open the local address printed by Vite. To produce a production bundle, run `bun
 
 ## Assets and libraries
 
-- Original generated cinematic imagery in `src/assets/assemble-hero.jpg` and `src/assets/assemble-archetypes.jpg`; created specifically for this concept, not movie stills or licensed character art.
+- Abstract reactor lighting, geometric hero panels, and typography are CSS-only. No generated character illustrations or movie imagery are included.
+- Artwork slots are configured in `src/lib/artwork.ts`: `hero` (wide opening background), `ironMan`, `captainAmerica`, `thor`, and `blackWidow` (individual panels in the hero selection). They remain empty until the organizer supplies authorized official artwork. Add image URLs for approved assets to those fields; the existing abstract presentation stays visible where a slot is empty. Use artwork with permission and record its source/license when supplied.
 - Original vector favicon in `public/favicon.svg`.
 - Barlow Condensed and DM Sans via Google Fonts (Google Fonts open-source typefaces).
 - React 19, TanStack Start/Router, Tailwind CSS 4 and lucide-react. The site has no event data service.
@@ -30,7 +31,7 @@ Open the local address printed by Vite. To produce a production bundle, run `bun
 
 ## Official information still needed
 
-Event date and timing; exact campus venue; official registration link and opening; team format and size; final activities/program; eligibility and organizer-approved branding. The site intentionally marks these as to be announced rather than inventing them. Replace preview-only wording and links only after the chapter confirms the details.
+Authorized official artwork for the five slots above; event date and timing; exact campus venue; official registration link and opening; team format and size; final activities/program; eligibility and organizer-approved branding. The site intentionally marks these as to be announced rather than inventing them. Replace preview-only wording and links only after the chapter confirms the details.
 
 ## GitHub export
 
