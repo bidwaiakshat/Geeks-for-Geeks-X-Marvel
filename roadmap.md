@@ -1,0 +1,3 @@
+- [x] Build cinematic responsive ASSEMBLE page and original imagery
+- [x] Implement hero selection, timeline/FAQ, and preview pass with SVG download
+- [x] Document concept and verify desktop/mobile interactions and motion

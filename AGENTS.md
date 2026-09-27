@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep ASSEMBLE as a single anchored event microsite at `/`; its sections form one cinematic narrative and share local interaction state.
+- Keep event pass creation entirely client-side and explicitly marked preview-only; official event registration details are not yet available.
