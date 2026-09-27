@@ -254,6 +254,7 @@ section[id] { scroll-margin-top: 76px; }
   .mission-cell { min-height: 225px; }
   .mission-icon { margin: 20px 0; }
   .hero-abstract { width: 96vw; right: -33%; top: 30%; }
+  .hero-abstract-label { display: none; }
   .hero-art { grid-template-columns: repeat(2, minmax(0, 1fr)); height: auto; }
   .hero-art-slot { height: 220px; border-bottom: 1px solid var(--border); }
   .hero-art-slot:nth-child(2) { border-right: 0; }
