@@ -215,7 +215,7 @@ section[id] { scroll-margin-top: 76px; }
   .header-links.is-open { display: flex; }
   .header-links a { padding: 15px 2px; border-bottom: 1px solid var(--border); font-size: 13px; }
   .header-links .menu-join { color: var(--primary); }
-  .hero { height: auto; min-height: 780px; max-height: none; padding: 150px 24px 90px; align-items: flex-end; }
+  .hero { height: auto; min-height: 690px; max-height: none; padding: 100px 24px 80px; align-items: flex-end; }
   .hero-image { object-position: 66% center; }
   .hero-shade { background: linear-gradient(0deg, var(--background) 0%, oklch(0.12 0.012 260 / 84%) 28%, oklch(0.12 0.012 260 / 18%) 72%, oklch(0.12 0.012 260 / 36%) 100%); }
   .hero-content { width: 100%; padding: 0 0 40px; }
@@ -227,6 +227,7 @@ section[id] { scroll-margin-top: 76px; }
   .section-head { display: block; margin-bottom: 33px; }
   .section-lead { margin-top: 20px; }
   .mission, .heroes, .timeline, .join, .faq { padding-block: 85px; }
+  .mission { padding-top: 62px; }
   .mission-grid { grid-template-columns: 1fr; }
   .mission-cell { min-height: 225px; }
   .mission-icon { margin: 20px 0; }
@@ -246,7 +247,7 @@ section[id] { scroll-margin-top: 76px; }
   .brand-name small { font-size: 8px; }
   .header-actions { gap: 6px; }
   .icon-control { min-width: 34px; min-height: 34px; }
-  .hero { min-height: 720px; }
+  .hero { min-height: 690px; }
   .hero-title { font-size: clamp(68px, 15.9vw, 82px); }
   .hero-buttons a { width: 100%; }
   .hero-status { line-height: 1.5; align-items: start; }
