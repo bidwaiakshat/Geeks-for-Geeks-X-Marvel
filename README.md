@@ -11,7 +11,7 @@ The design combines dark backgrounds, Marvel-red accents, character imagery, and
 * Development platform: Lovable, with AI-assisted development.
 * Technologies: React, TypeScript, TanStack Start, Tailwind CSS, and shadcn/ui.
 * Icons: Lucide React.
-* Images: Supplied images of Iron Man, Captain America, Thor, and Black Widow. Character artwork belongs to its respective rights holders.
+* Images: Supplied images of Iron Man, Captain America, Thor, and Black Widow from Google. Character artwork belongs to its respective rights holders.
 * Branding: MARVEL typographic badge and GeeksForGeeks Student Chapter identification.
 * Effects: Custom CSS/SVG arc reactor, scroll reveals, pointer effects, and hero-selection transitions.
 * Interactive feature: Downloadable SVG preview pass; not an official registration ticket.
