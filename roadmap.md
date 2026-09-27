@@ -1,5 +1,5 @@
 - [x] Build cinematic responsive ASSEMBLE page
 - [x] Implement hero selection, timeline/FAQ, and preview pass with SVG download
 - [x] Document concept and verify desktop/mobile interactions and motion
-- [ ] Remove generated character imagery; replace hero and four character areas with configurable official-artwork slots and abstract fallbacks
-- [ ] Update documentation and verify desktop/mobile interactions and motion after artwork removal
+- [x] Remove generated character imagery; replace hero and four character areas with configurable official-artwork slots and abstract fallbacks
+- [x] Update documentation and verify desktop/mobile interactions and motion after artwork removal
