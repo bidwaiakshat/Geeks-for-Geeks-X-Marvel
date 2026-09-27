@@ -94,7 +94,7 @@ section[id] { scroll-margin-top: 76px; }
 .kicker, .section-kicker { display: flex; align-items: center; gap: 12px; color: var(--cyan); font-size: 11px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; }
 .kicker::before, .section-kicker::before { content: ''; width: 26px; height: 1px; background: currentColor; flex: none; }
 .hero-pretitle { color: var(--foreground); margin: 29px 0 0; font: 700 clamp(19px, 2.1vw, 31px)/1 var(--font-display); text-transform: uppercase; letter-spacing: .16em; }
-.hero-title { margin: 0 0 3px -7px; font: 900 clamp(96px, 14.4vw, 240px)/.83 var(--font-display); text-transform: uppercase; letter-spacing: -.035em; white-space: nowrap; text-shadow: 0 8px 40px oklch(0.1 0.01 260 / 35%); }
+.hero-title { margin: 0 0 3px -7px; font: 900 clamp(96px, 14.4vw, 240px)/.83 var(--font-display); text-transform: uppercase; letter-spacing: .01em; white-space: nowrap; text-shadow: 0 8px 40px oklch(0.1 0.01 260 / 35%); }
 .hero-rule { height: 4px; width: min(425px, 90%); background: var(--primary); margin: 24px 0 24px; }
 .hero-tagline { margin: 0; font: 700 clamp(24px, 2.65vw, 40px)/1.15 var(--font-display); text-transform: uppercase; }
 .hero-copy { color: var(--muted-foreground); max-width: 470px; font-size: 14px; line-height: 1.7; margin: 13px 0 29px; }
