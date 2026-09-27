@@ -270,9 +270,11 @@ section[id] { scroll-margin-top: 76px; }
   .pass-stage { padding-top: 0; }
 }
 @media (max-width: 420px) {
-  .brand-mark { width: 30px; height: 27px; }
-  .brand-name { font-size: 13px; }
-  .brand-name small { font-size: 8px; }
+  .brand { gap: 5px; }
+  .brand-mark { width: 26px; height: 24px; }
+  .brand-name { font-size: 11px; }
+  .brand-name small { font-size: 6.5px; }
+  .site-header .marvel-badge { font-size: 14px; padding: 5px 4px 4px; }
   .header-actions { gap: 6px; }
   .icon-control { min-width: 34px; min-height: 34px; }
   .hero { min-height: 650px; }
