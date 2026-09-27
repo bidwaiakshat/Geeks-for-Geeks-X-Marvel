@@ -1,5 +1,7 @@
-- [x] Build cinematic responsive ASSEMBLE page
+- [x] Build cinematic responsive event page
 - [x] Implement hero selection, timeline/FAQ, and preview pass with SVG download
 - [x] Document concept and verify desktop/mobile interactions and motion
-- [x] Remove generated character imagery; replace hero and four character areas with configurable official-artwork slots and abstract fallbacks
-- [x] Update documentation and verify desktop/mobile interactions and motion after artwork removal
+- [x] Remove generated character imagery and use the four supplied character images
+- [x] Integrate the four user-supplied Avengers images and update the event identity
+- [x] Add the interactive charged-state reactor and cinematic image interactions
+- [x] Verify all requested desktop and 360px interactions

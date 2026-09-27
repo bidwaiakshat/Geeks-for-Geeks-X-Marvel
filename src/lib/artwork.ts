@@ -1,14 +1,12 @@
-/** Add URLs only for artwork the event organizers are authorized to use. */
-export const officialArtwork: {
-  hero: string | null;
-  ironMan: string | null;
-  captainAmerica: string | null;
-  thor: string | null;
-  blackWidow: string | null;
-} = {
-  hero: null,
-  ironMan: null,
-  captainAmerica: null,
-  thor: null,
-  blackWidow: null,
+import blackWidowAsset from "@/assets/black-widow.png.asset.json";
+import captainAmericaAsset from "@/assets/captain-america.png.asset.json";
+import ironManAsset from "@/assets/iron-man.png.asset.json";
+import thorAsset from "@/assets/thor.png.asset.json";
+
+/** User-provided artwork used without altering visible source credits or logos. */
+export const officialArtwork = {
+  ironMan: ironManAsset.url,
+  captainAmerica: captainAmericaAsset.url,
+  thor: thorAsset.url,
+  blackWidow: blackWidowAsset.url,
 };
