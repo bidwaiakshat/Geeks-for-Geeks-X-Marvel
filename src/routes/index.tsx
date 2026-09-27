@@ -67,6 +67,7 @@ function Index() {
   const [error, setError] = useState("");
   const [created, setCreated] = useState(false);
   const nameRef = useRef<HTMLInputElement>(null);
+  const heroRef = useRef<HTMLElement>(null);
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
     setMotionOff(media.matches);
@@ -89,6 +90,13 @@ function Index() {
     setName(name.trim()); setTeam(team.trim()); setError(""); setCreated(true);
   };
   const resetPass = () => { setCreated(false); setName(""); setTeam(""); setError(""); nameRef.current?.focus(); };
+  const moveHero = (event: React.PointerEvent<HTMLElement>) => {
+    if (motionOff || event.pointerType !== "mouse" || !window.matchMedia("(pointer: fine)").matches) return;
+    const bounds = event.currentTarget.getBoundingClientRect();
+    event.currentTarget.style.setProperty("--pointer-x", `${((event.clientX - bounds.left) / bounds.width - .5) * -16}px`);
+    event.currentTarget.style.setProperty("--pointer-y", `${((event.clientY - bounds.top) / bounds.height - .5) * -12}px`);
+  };
+  const resetHero = () => { heroRef.current?.style.setProperty("--pointer-x", "0px"); heroRef.current?.style.setProperty("--pointer-y", "0px"); };
   return <div className={`site-shell${motionOff ? " motion-off" : ""}`}>
     <a href="#main" className="skip-link">Skip to content</a><div className="noise-overlay" aria-hidden="true" />
     <header className="site-header">
@@ -99,7 +107,7 @@ function Index() {
       <div className="header-actions"><Button type="button" variant="ghost" className="icon-control" onClick={() => setMotionOff((previous) => !previous)} aria-label={motionOff ? "Enable motion" : "Pause motion"} title={motionOff ? "Enable motion" : "Pause motion"}>{motionOff ? <Play size={17} /> : <Pause size={17} />}</Button><Button asChild variant="cinematic" className="header-cta"><a href="#join">Join the initiative <ArrowRight size={14} /></a></Button><Button type="button" variant="ghost" className="icon-control mobile-toggle" onClick={() => setMenuOpen((previous) => !previous)} aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} aria-controls="site-nav">{menuOpen ? <X size={19} /> : <Menu size={19} />}</Button></div>
     </header>
     <main id="main">
-      <section className="hero" id="top" aria-labelledby="hero-heading"><img src={heroImage} alt="Original concept art of an armored guardian overlooking a futuristic city at night" className="hero-image" width={1920} height={1080} fetchPriority="high" /><div className="hero-shade" aria-hidden="true" /><div className="reactor" aria-hidden="true" />
+      <section className="hero" id="top" aria-labelledby="hero-heading" ref={heroRef} onPointerMove={moveHero} onPointerLeave={resetHero}><img src={heroImage} alt="Original concept art of an armored guardian overlooking a futuristic city at night" className="hero-image" width={1920} height={1080} fetchPriority="high" /><div className="hero-shade" aria-hidden="true" /><div className="reactor" aria-hidden="true" />
         <div className="hero-content"><div className="kicker">GEEKSFORGEEKS STUDENT CHAPTER / BENNETT UNIVERSITY</div><p className="hero-pretitle">The Infinity Protocol</p><h1 id="hero-heading" className="hero-title">ASSEMBLE</h1><div className="hero-rule" aria-hidden="true" /><p className="hero-tagline">Great ideas need a team.<br />Yours starts here.</p><p className="hero-copy">A new kind of mission for the minds that build, question, and imagine what comes next.</p><div className="hero-buttons"><Button asChild variant="cinematic"><a href="#join">Join the initiative <ArrowRight size={15} /></a></Button><Button asChild variant="cinematicOutline"><a href="#mission">Explore the mission <ArrowDown size={15} /></a></Button></div><div className="hero-status"><span className="status-dot" />Event date to be announced <span aria-hidden="true">•</span> Bennett University, Greater Noida</div></div>
         <div className="hero-bottom"><span>EARTH'S MIGHTIEST IDEAS START HERE</span><a href="#mission">SCROLL TO EXPLORE <ArrowDown size={13} /></a><span>01 / 05</span></div>
       </section>
