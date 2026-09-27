@@ -338,6 +338,8 @@ section[id] { scroll-margin-top: 76px; }
 @keyframes reactor-breathe { to { opacity: .65; box-shadow: 0 0 32px var(--cyan), inset 0 0 20px var(--cyan); } }
 .hero-art { height: clamp(260px, 31vw, 390px); }
 .hero-option { display: block; height: auto; white-space: normal; }
+.timeline-trigger { height: auto; min-height: 84px; }
+.faq-trigger { height: auto; min-height: 64px; white-space: normal; }
 .hero-art-slot { background: radial-gradient(circle at 50% 35%, var(--selected-haze), transparent 70%), var(--background); transform: perspective(750px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)); transition: transform .3s ease-out, opacity .45s ease, border-color .45s ease; }
 .hero-art-slot[data-selected="true"] { border-bottom: 3px solid var(--selected-light); }
 .hero-art-slot img { object-fit: contain; object-position: center center; padding: 12px 12px 30px; }
