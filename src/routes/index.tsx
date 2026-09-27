@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowDown, ArrowRight, ArrowUp, Atom, Download, Menu, Plus, RotateCcw, Shield, Pause, Play, X, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { officialArtwork } from "@/lib/artwork";
+import gfgHeaderLogo from "@/assets/gfg-header-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -108,7 +109,7 @@ function Index() {
   return <div className={`site-shell${motionOff ? " motion-off" : ""}${charged ? " reactor-charged" : ""}`} data-hero={selected}>
     <a href="#main" className="skip-link">Skip to content</a><div className="noise-overlay" aria-hidden="true" />
     <header className="site-header">
-      <a href="#top" className="brand" onClick={closeMenu} aria-label="GeeksForGeeks Student Chapter, Bennett University — back to top"><span className="brand-mark" aria-hidden="true">G</span><span className="brand-name">GeeksForGeeks<small>STUDENT CHAPTER · BENNETT</small></span><span className="marvel-badge" aria-label="Marvel inspired">MARVEL</span></a>
+      <a href="#top" className="brand" onClick={closeMenu} aria-label="GeeksForGeeks Student Chapter, Bennett University — back to top"><img className="brand-mark" src={gfgHeaderLogo.url} alt="" aria-hidden="true" /><span className="brand-name">Geeks For Geeks<small>STUDENT CHAPTER · BENNETT</small></span><span className="marvel-badge" aria-label="Marvel inspired">MARVEL</span></a>
       <nav id="site-nav" aria-label="Main navigation" className={`header-links${menuOpen ? " is-open" : ""}`}>
         <a href="#mission" onClick={closeMenu}>Mission</a><a href="#heroes" onClick={closeMenu}>Heroes</a><a href="#timeline" onClick={closeMenu}>Timeline</a><a href="#faq" onClick={closeMenu}>FAQ</a><a className="menu-join md:hidden" href="#join" onClick={closeMenu}>Join the initiative →</a>
       </nav>
