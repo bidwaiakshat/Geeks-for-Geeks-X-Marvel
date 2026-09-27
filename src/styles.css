@@ -76,7 +76,7 @@ section[id] { scroll-margin-top: 76px; }
 .icon-control:hover { background: var(--accent); }
 .mobile-toggle { display: none; }
 
-.hero { min-height: min(840px, 100svh); height: max(690px, 92svh); position: relative; display: flex; align-items: center; isolation: isolate; padding: 100px clamp(24px, 7.8vw, 150px) 80px; background: var(--background); }
+.hero { min-height: min(840px, 100svh); height: min(900px, 88svh); position: relative; display: flex; align-items: center; isolation: isolate; padding: 100px clamp(24px, 7.8vw, 150px) 80px; background: var(--background); }
 .hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 49%; z-index: -3; }
 .hero-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, oklch(0.12 0.012 260 / 96%) 0%, oklch(0.12 0.012 260 / 72%) 34%, oklch(0.12 0.012 260 / 15%) 70%), linear-gradient(0deg, var(--background) 0%, transparent 28%, transparent 76%, oklch(0.12 0.012 260 / 35%) 100%); }
 .hero-content { position: relative; width: min(850px, 70%); padding-top: 35px; }
@@ -122,6 +122,8 @@ section[id] { scroll-margin-top: 76px; }
 .hero-option { min-width: 0; text-align: left; border: 0; border-top: 3px solid transparent; background: var(--background); color: var(--foreground); padding: 20px 23px 24px; transition: background .25s, border-color .25s; }
 .hero-option:hover { background: var(--accent); }
 .hero-option[aria-pressed="true"] { background: var(--surface); border-top-color: var(--hero-accent, var(--primary)); }
+.hero-option:nth-child(2) { --hero-accent: var(--cyan); }
+.hero-option:nth-child(3) { --hero-accent: var(--gold); }
 .hero-option span { display: block; color: var(--muted-foreground); font-size: 10px; font-weight: 700; letter-spacing: .16em; margin-bottom: 12px; }
 .hero-option strong { display: block; font: 800 clamp(25px, 2.5vw, 41px)/.95 var(--font-display); text-transform: uppercase; }
 .hero-option small { display: block; color: var(--muted-foreground); font-size: 11px; margin-top: 7px; }
@@ -180,6 +182,7 @@ section[id] { scroll-margin-top: 76px; }
 
 .faq { padding: 125px 0 120px; }
 .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
+.faq-lead { margin-top: 26px; }
 .faq-list { border-top: 1px solid var(--border); }
 .faq-item { border-bottom: 1px solid var(--border); }
 .faq-trigger { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 18px; border: 0; background: transparent; color: var(--foreground); text-align: left; padding: 22px 0; font-size: 15px; font-weight: 700; }
